@@ -1,0 +1,31 @@
+WKiRO projekt:
+
+Zbudować klasyfikator (metoda uczenia maszynowego może być dowolna)
+
+Zal: na koniec raport (pdf z opisem, kodem, wyborem środowiska), ustna obrona raportu
+
+Możliwe konsultacje po umówieniu się
+
+---
+
+Metoda selekcji cech - podział na uczący i testowy (small sample data - mało danych w porównaniu do cech) - ranking cech / metody opakowane (wrapped) / metody wbudowane (embeded).
+
+Porównać kilka metod selekcji i klasyfikacji
+
+---
+
+information leak (przeciek informacji) - przy budowie klasyfikatora używane były etykiety ze ioru testowego
+
+---
+
+Dane dostępne na teams
+
+---
+
+zmienna niezależna do przewidywania na wyjściu klasyfikatora (etykieta) mfs_cens (metastasis free ...)
+0 - był przerzut
+1 - negatywna klasa, nie ma przerzutu
+
+---
+
+dane radiomiczne (na podstawie których mamy klasyfikować) od kolumny AZ (original_shape_Elongation ... do końca ok 100 cech)
