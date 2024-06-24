@@ -6,9 +6,10 @@ CVaPR Project - Computer Vision and Pattern Recognition. Classification of tumou
 
 For this project I decided to create a CNN - Convolutional Neural Network. The trained classifier will be used to determine whether a patient has "metastasis" (class 0) or "no metastasis" (class 1) based on 105 features.
 
-The CNN model will be built based on the output of hyperparameter optimisation scripts using the *optuna* library.
+The CNN model is built based on the output of hyperparameter optimisation scripts using the *optuna* library.
 In addition, 3 different feature selection methods are used to **TRY** to improve the CNN performance.
-This CNN model will be compared with simple classifiers such as *SVM* or *KNN*, etc.
+This CNN model is compared with simple classifiers such as *SVM* or *KNN*, etc.
+Later, we tried the feature selection using the ranking method for simple classifiers to see if the results could be improved.
 
 ## File structure overview
 
@@ -17,6 +18,8 @@ This CNN model will be compared with simple classifiers such as *SVM* or *KNN*, 
 - The `cvapr_project_instructions.txt` file contains the rough notes on the details of this project (in Polish).
 
 - The `corrections_needed.png` file contains the list of things that needed to be corrected before the final report was submitted (in Polish).
+
+- The `corrections_needed_2.png` file contains another thing that needed to be corrected before the final report was submitted (in Polish).
 
 #### `./src/` directory
 
@@ -30,7 +33,8 @@ This CNN model will be compared with simple classifiers such as *SVM* or *KNN*, 
 
   - `ranking_method.ipynb` - assess the impact of individual features on a model’s performance. In practice, they help select an optimal set of features for machine learning models,
   - `wrapper_method.ipynb` - choose the best features by testing different combinations and keeping those that enhance model performance,
-  - `embedded_method.ipynb` - feature selection process as part of the model training. Select features during the model learning process, specific to given learning algorithms that perform feature selection while training, such as Lasso.
+  - `embedded_method.ipynb` - feature selection process as part of the model training. Select features during the model learning process, specific to given learning algorithms that perform feature selection while training, such as Lasso,
+  - `simple_classifier_ranking_method.ipynb` - ranking method applied to simple classifiers.
 
 - The `all_feature_selection/` subdirectory contains script used to test different feature selection methods on `ALL FEATURES (before splitting)`,
 
